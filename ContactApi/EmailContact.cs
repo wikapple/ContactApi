@@ -34,7 +34,7 @@ namespace ContactApi
                 return new BadRequestObjectResult("Name, email, and message are required.");
             }
 
-            string connectionString = Environment.GetEnvironmentVariable("WIKAPPLE_COMMUNIATION_SERVICE_CONNECTION_STRING");
+            string connectionString = Environment.GetEnvironmentVariable("WIKAPPLE_COMMUNICATION_SERVICE_CONNECTION_STRING");
 
             var emailClient = new EmailClient(connectionString);
 
