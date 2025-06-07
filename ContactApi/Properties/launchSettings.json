@@ -3,7 +3,10 @@
     "ContactApi": {
       "commandName": "Project",
       "commandLineArgs": "--port 7236",
-      "launchBrowser": false
+      "launchBrowser": false,
+      "environmentVariables": {
+        "AZURE_FUNCTIONS_ENVIRONMENT": "Development"
+      }
     }
   }
 }
